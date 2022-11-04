@@ -6,13 +6,13 @@ function solution(arr, divisor) {
     //     }
     // }
     
-    // arr.reduce((a,b) => {
-    //     if(b % divisor === 0 ) {
-    //         answer.push(b)
-    //     } 
-    // })
+    arr.reduce((a,b) => {
+        if(b % divisor === 0 ) {
+            answer.push(b)
+        } 
+    },[arr[0]])
     
-     answer = arr.filter(a => a % divisor === 0)
+     // answer = arr.filter(a => a % divisor === 0)
     
     
     return answer.length > 0 ? answer.sort((a,b) => a-b) : [-1];

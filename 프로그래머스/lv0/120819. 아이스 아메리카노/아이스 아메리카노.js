@@ -3,10 +3,7 @@ function solution(money) {
     let num = money;
     if(money < 5500) return [0, money];
     
-    while(true) {
-        if (num < 5500){
-            break;
-        }
+    while(num >= 5500) {
         num = num - 5500
         answer++
     }
